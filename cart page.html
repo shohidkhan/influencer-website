@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kerstfeest</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/venobox.css">
+    <link rel="stylesheet" href="css/jquery.fallingsnow.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div class="snow-wrap">
+        <div id="snow"></div>
+    </div>
+    <!--menu part start-->
+    <header id="navigation" class="top_menu">
+        <nav class="navbar navbar-expand-lg navbar-light p-0 menu ">
+            <div class="container">
+                <div class="brand-logo">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="produtc.html">Store</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="blog grid view.html">Blog</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="contact%20us.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="contact%20us.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav right_menu">
+                        <li class="nav_item">
+                            <a href="#" class="nav-link ">
+                                <i class="fa fa-user"></i>
+                            </a>
+                            <ul class="dropdown">
+                                <li><a href="#"><i class="fas fa-user"></i>Account</a></li>
+                                <li><a href="Check%20out.html"><i class="far fa-check-square"></i>Checkout</a></li>
+                                <li><a href="#"><i class="fas fa-address-card"></i>Registration</a></li>
+                                <li><a href="#"><i class="fas fa-unlock"></i>login</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="shop-padding nav_item">
+                            <a href="#" class="nav-link ">
+                                <i class="fas fa-cart-plus"></i>
+                                <span>2</span>
+                            </a>
+                            <div class="dropdown3">
+                                <h3>You have <span> 02 items </span>in your cart</h3>
+                                <ul class="drop-item1">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/cart1.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p>Santa Wallet</p>
+                                            <span>Price : $ 99.00</span>
+                                            <div class="icon">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="drop-item2">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/cart2.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p>Santa Wallet</p>
+                                            <span>Price : $ 99.00</span>
+                                            <div class="icon">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="total">
+                                    <span>Total</span>
+                                    <span>$500.00</span>
+                                </ul>
+                                <ol class="v_cart text-center">
+                                    <li><a href="cart%20page.html">View Cart</a></li>
+                                    <li><a href="Check%20out.html">Check Out</a></li>
+                                </ol>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--menu part ends-->
+
+
+
+    <!-- cart part start -->
+    <section id="cart_part">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form action="">
+                        <table class="table-responsive cart-wrap">
+                            <thead>
+                                <tr>
+                                    <th class="images">Image</th>
+                                    <th class="product">Product</th>
+                                    <th class="ptice">Price</th>
+                                    <th class="quantity">Quantity</th>
+                                    <th class="total">Total</th>
+                                    <th class="remove">Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="images"><img src="images/cart2.jpg" alt=""></td>
+                                    <td class="product"><a href="single-product.html">Pure Olive Oil</a></td>
+                                    <td class="ptice">$684.47</td>
+                                    <td class="">
+                                        <div class="quantity cart-plus-minus">
+                                            <input value="1" class="text-center cart_quntity">
+                                        </div>
+                                    </td>
+                                    <td class="total">$684.47</td>
+                                    <td class="remove"><i class="fa fa-times"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row mt-5">
+                            <div class="col-xl-4 col-lg-5 col-md-6 ">
+                                <div class="cartcupon-wrap">
+                                    <ul class="d-flex">
+                                        <li>
+                                            <button>Update Cart</button>
+                                        </li>
+                                        <li><a href="shop.html">Continue Shopping</a></li>
+                                    </ul>
+                                    <h3>Cupon</h3>
+                                    <p>Enter Your Cupon Code if You Have One</p>
+                                    <div class="cupon-wrap">
+                                        <input type="text" placeholder="Cupon Code">
+                                        <button>Apply Cupon</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 offset-xl-5 col-lg-4 offset-lg-3 col-md-6">
+                                <div class="cart-total text-right">
+                                    <h3>Cart Totals</h3>
+                                    <ul>
+                                        <li><span class="pull-left">Subtotal </span>$380.00</li>
+                                        <li><span class="pull-left"> Total </span> $380.00</li>
+                                    </ul>
+                                    <a href="checkout.html">Proceed to Checkout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="col-lg-12  cart_table">
+                    <table class=" w-100 table-responsive">
+                        <thead>
+                            <tr>
+                                <th>Remove</th>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#" class="trash"><i class="fas fa-trash-alt"></i></a>
+                                </td>
+                                <td>
+                                    <div class="cart_prodct">
+                                        <img src="images/wh-img.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="cart_content">
+                                        <h3>Santa Claus</h3>
+
+                                    </div>
+                                </td>
+                                <td>$99.00</td>
+                                <td>01</td>
+                                <td>$99.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" class="trash"><i class="fas fa-trash-alt"></i></a>
+                                </td>
+                                <td>
+                                    <div class="cart_prodct">
+                                        <img src="images/cartproduct1.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="cart_content">
+                                        <h3>Santa Claus</h3>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>$99.00</td>
+                                <td>01</td>
+                                <td>$99.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> -->
+                <!-- <div class="col-lg-3 col-12 coupon_area">
+                    <h4>Have a Coupon ?</h4>
+                    <form>
+                        <input type="text" class="cart_input" placeholder="Enter your code">
+                        <button type="submit" class=""><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <h5>Cart Total</h5>
+                    <ul>
+                        <li>Cart Subtotal <span>$ 297.00</span></li>
+                        <li>Shipping <span>Free Shipping</span></li>
+                        <li>Grand Total <span>$ 297.00</span></li>
+                    </ul>
+                    <ul class="update">
+                        <a href="#" class="latest">Update</a>
+                        <a href="#" class="latest">Proceed</a>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- cart part ends -->
+
+    <!--footer part start-->
+    <footer id="footer_part">
+        <div class="container">
+            <div class="footer_top">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div class="about_krestfeest">
+                            <h2>About Influencer</h2>
+                            <p class="p_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-6 col-md-4">
+                        <div class="important_link">
+                            <h2>Important Links</h2>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Store</a></li>
+                                <li><a href="#">Testimonial</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-6 col-md-4">
+                        <div class="follow_us">
+                            <h2>Follow us</h2>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="footer_bottom">
+                <div class="row top_fot mx-0 align-item-center">
+                    <div class="col-lg-4 col-12 text-center">
+                        <div class="number">
+                            <a class="f-l" href="#"><i class="fas fa-phone "></i>+880 1234 567 890</a>
+                            <a class="f-r" href="demoname@demo.com"><i
+                                    class="fas fa-envelope "></i>demoname@demo.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 text-center">
+                        <div class="footer_logo">
+                            <a href="#">
+                                <img src="images/footer_logo.png" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 text-center">
+                        <div class="cop_right">
+                            <p>Copyright © 2018. Al rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </footer>
+
+
+    <i class="fa fa-angle-up top_to"></i>
+    <!--footer part Ends-->
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/jquery.fallingsnow.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

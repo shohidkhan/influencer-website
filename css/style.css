@@ -819,6 +819,7 @@ header nav .right_menu li a.nav-link i {
 }
 
 
+
 #prouct_part .product_img .product_img_overlay i:hover {
     background: var(--blue);
     color: #fff;
@@ -1612,7 +1613,7 @@ ul.pagination .page-item .page-link:hover {
 }
 
 .products_top_margin {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 #produc_grid_bill .sort_icon a i {
@@ -3115,7 +3116,7 @@ ul.pagination .page-item .page-link:hover {
 }
 
 #footer_part .footer_top .important_link ul li a:hover {
-    color: var(--blue);
+    color: #fff;
     padding-left: 10px;
 }
 
@@ -3134,7 +3135,7 @@ ul.pagination .page-item .page-link:hover {
 }
 
 #footer_part .footer_top .follow_us ul li a:hover {
-    color: var(--blue);
+    color: #fff;
     padding-left: 10px;
 }
 

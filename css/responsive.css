@@ -176,6 +176,9 @@
     }
 
     /*    /banner part ends*/
+    .single-product-menu ul li a {
+        padding: 10px 20px 10px 21px;
+    }
 
 
 
@@ -461,11 +464,32 @@
         padding-bottom: 20px;
     }
 
+    .cartcupon-wrap ul li a,
+    .cartcupon-wrap ul li button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
     #cart_part .coupon_area h5 {
         text-align: center;
         padding-top: 60px;
         padding-bottom: 10px;
 
+    }
+
+    #prouct_part .sort_select select {
+        padding: 10px 15px;
+        font-size: 14px;
+        color: var(--blue);
+        width: 480px;
+    }
+
+    .cartcupon-wrap h3 {
+        margin-top: 60px;
+    }
+
+    .cart-total {
+        margin-top: 50px;
     }
 
     #cart_part .coupon_area form {

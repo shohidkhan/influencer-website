@@ -41,25 +41,18 @@
         padding: 0;
     }
 
-    #banner .banner_img .man {
-        position: absolute;
-        top: 94px;
-        right: -54px;
-    }
 
-    #banner .banner_img {
-        display: none;
-    }
 
-    #banner .banner_img {
-        position: relative;
-        left: -10%;
-        top: 8% !important;
+
+    .banner_image {
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     #banner .banner_text {
         text-align: center;
         padding-top: 0;
+        margin-top: 50px;
     }
 
     #banner .banner_text h3 {
@@ -72,7 +65,7 @@
     }
 
     #banner .banner_text h1 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     #banner .banner_text a {
@@ -93,6 +86,11 @@
         width: 210px;
         left: 307px;
         padding-bottom: 10px;
+    }
+
+    header nav .navbar-nav .nav-item .dropdown,
+    header nav .right_menu .nav_item .dropdown {
+        left: 0;
     }
 
     header nav .right_menu .nav_item .dropdown2 h3 {
@@ -116,14 +114,17 @@
     }
 
     header nav .right_menu .nav_item .dropdown3 {
-        left: 307px;
-        width: 210px;
+        left: 50%;
+        top: 70px;
+        width: 190px;
         padding-bottom: 10px;
     }
 
     header nav .right_menu .nav_item:hover .dropdown3 {
-        top: 7px;
+        top: 24px;
     }
+
+
 
     header nav .right_menu .nav_item .dropdown3 h3 {
         padding: 10px 5px;
@@ -148,7 +149,8 @@
 
     header nav .right_menu .nav_item .dropdown3 ul.drop-item1 a .icon i,
     header nav .right_menu .nav_item .dropdown3 ul.drop-item2 a .icon i {
-        right: -45px;
+        right: -37px;
+        top: -25px;
     }
 
     header nav .right_menu .nav_item .dropdown3 ul.total span {
@@ -171,11 +173,30 @@
         padding-top: 0px;
     }
 
+    header nav .right_menu .nav_item .dropdown3 ul.drop-item1 li {
+        margin-bottom: 5px;
+    }
+
+    header nav .right_menu .nav_item .dropdown3 ul.drop-item1 img {
+        width: 50px !important;
+    }
+
     header nav .right_menu .nav_item .dropdown3 ul.drop-item2 {
         padding-top: 0px;
     }
 
     /*    /banner part ends*/
+
+    /* Counter up part */
+
+    .rating-content {
+        margin: 15px 0;
+    }
+
+    .rating-rounded {
+        margin: 0 10px;
+    }
+
     .single-product-menu ul li a {
         padding: 10px 20px 10px 21px;
     }
@@ -208,15 +229,45 @@
     }
 
     #prouct_part .product_img_part {
-        margin: -15px 0;
+        margin: 30px 0;
     }
 
-    #gift_part .gift_right_part {
-        padding-top: 40px;
+    #prouct_part .product_img_part .star i {
+        font-size: 12px;
     }
 
     #prouct_part {
         padding: 40px 0;
+    }
+
+    #prouct_part .product_img_part .product_img_overlay .product_details_icon {
+        transform: translateY(-25%);
+    }
+
+    #prouct_part .product_img_part .product_img_overlay .product_details_icon a {
+        transform: translateX(200px);
+        transition: all linear 0.5s;
+    }
+
+    .product_details_text {
+        padding: 35px 30px;
+    }
+
+    #prouct_part .product_img_part:hover a:last-child {
+        transition-delay: 0.10s;
+    }
+
+    #prouct_part .product_img_part:hover .product_img_overlay .product_details_icon a {
+        transform: translateX(35px);
+    }
+
+    .product_content {
+        padding: 0;
+        margin: 0;
+    }
+
+    .shorting {
+        margin: 0;
     }
 
     #produc_grid_bill .sort_icon a i {
@@ -282,31 +333,7 @@
         padding: 60px 0;
     }
 
-    #prouct_part .product_img {
-        margin-top: 50px;
-    }
 
-    #get_ticket {
-        padding: 60px 0;
-    }
-
-    #get_ticket .ticket_text ul {
-        text-align: center;
-    }
-
-    #get_ticket .ticket_text ul li a {
-        margin-top: 35px;
-    }
-
-    #get_ticket .ticket_text .modal-body .pupop-btn {
-        font-size: 15px;
-        left: 16px;
-        transform: translateX(0);
-    }
-
-    #counter_down .res_count {
-        margin-top: 10px;
-    }
 
     #blog_part {
         padding: 60px 0;
@@ -409,31 +436,6 @@
         padding: 100px 0;
     }
 
-    #wish_part .table_part thead th {
-        font-size: 14px;
-        padding: 0 14px;
-    }
-
-    #wish_part .table_part tbody tr td a.trash {
-        font-size: 22px;
-    }
-
-    #wish_part .table_part tbody tr td .wish_product {
-        margin-right: 30px;
-        margin-left: 30px;
-        margin-top: 25px;
-        margin-bottom: 8px;
-    }
-
-    #wish_part .table_part tbody tr td .wish_content h3 {
-        font-size: 18px;
-        padding-bottom: 5px;
-    }
-
-    #wish_part .table_part tbody tr td a.add_cart {
-        font-size: 14px;
-        padding: 8px 6px;
-    }
 
     #cart_part .cart_table table thead tr th {
         font-size: 16px;
@@ -477,11 +479,30 @@
 
     }
 
+    .check_form {
+        margin-bottom: 30px;
+
+    }
+
+    .order {
+        margin: 0;
+    }
+
+    .sort_select.form-group {
+        margin-top: 20px !important;
+
+    }
+
     #prouct_part .sort_select select {
         padding: 10px 15px;
         font-size: 14px;
         color: var(--blue);
-        width: 480px;
+        width: 250px;
+    }
+
+    .short_right {
+        justify-content: start;
+        margin-top: 20px;
     }
 
     .cartcupon-wrap h3 {
@@ -545,7 +566,7 @@
     }
 
     .follow_us {
-        padding-top: 10px;
+        padding-top: 20px;
     }
 
     .information {
@@ -564,10 +585,6 @@
         transition: all linear 0.2s;
     }
 
-    header nav .navbar-nav .nav-item .nav-link:hover {
-
-        color: #ab1629;
-    }
 
     .right_menu li a::after {
         position: absolute;
@@ -592,11 +609,6 @@
         right: -54px;
     }
 
-    #get_ticket .ticket_text .modal-body .pupop-btn {
-        font-size: 15px;
-        left: 16px;
-        transform: translateX(0);
-    }
 
     header nav .navbar-nav .nav-item .dropdown.top_60 {
         left: 314px;
@@ -606,6 +618,11 @@
     header nav .navbar-nav .nav-item .dropdown.top_15 {
         left: 314px;
         top: -70px;
+    }
+
+    header nav .navbar-nav .nav-item .dropdown,
+    header nav .right_menu .nav_item .dropdown {
+        left: 328px;
     }
 
     header nav .right_menu .nav_item .dropdown.top_141 {
@@ -619,6 +636,10 @@
 
     header nav .navbar-nav .nav-item:hover .dropdown.top_15 {
         top: -128px;
+    }
+
+    header nav .right_menu .nav_item:hover .dropdown {
+        top: 15px;
     }
 
     header nav .right_menu .nav_item:hover .dropdown.top_141 {
@@ -663,13 +684,21 @@
 
     header nav .right_menu .nav_item .dropdown3 {
         left: 307px;
-        width: 270px;
+        width: 215px;
         padding-bottom: 10px;
-        top: -150px;
+        top: 30px;
+    }
+
+    header nav .right_menu .nav_item .dropdown3 ul.drop-item1 li {
+        margin-bottom: 10px;
+    }
+
+    header nav .right_menu .nav_item .dropdown3 ul.drop-item1 img {
+        width: 50px !important;
     }
 
     header nav .right_menu .nav_item:hover .dropdown3 {
-        top: -180px;
+        top: 0px;
     }
 
     header nav .right_menu .nav_item .dropdown3 h3 {
@@ -728,15 +757,16 @@
     }
 
     /* HEARDER PART ENDS*/
-    #banner .banner_img {
+    /* #banner .banner_img {
         position: relative;
-        left: -10%;
+        left: 50%;
+        transform: translateX(-50%);
         top: 8% !important;
-    }
+    } */
 
     #banner .banner_text {
         text-align: center;
-        padding-top: 0;
+        padding-top: 50px;
     }
 
     #banner .banner_text h3 {
@@ -758,18 +788,15 @@
         margin-bottom: 0;
     }
 
+    .banner_image {}
+
     /*BANNER PART ENDS*/
-    #gift_part .gift_right_part {
-        padding-top: 40px;
-    }
+
 
     #prouct_part {
         padding: 40px 0;
     }
 
-    #prouct_part .product_img {
-        margin-top: 50px;
-    }
 
     .pagination>li>a {
         border-radius: 0 !important;
@@ -828,66 +855,21 @@
         padding-top: 0;
     }
 
+    .short_right {
+        justify-content: start;
+        margin-top: 20px;
+    }
+
+    #prouct_part .product_img_part:hover .product_img_overlay .product_details_icon a {
+        transform: translateX(-40px);
+    }
+
     /*    PRODUCT P[ART ENDS*/
-    #get_ticket {
-        padding: 60px 0;
-    }
-
-    #get_ticket .ticket_text ul {
-        text-align: center;
-    }
-
-    #get_ticket .ticket_text ul li a {
-        margin-top: 35px;
-    }
-
-    #produc_grid_bill .sort_icon a i {
-        padding: 5px;
-        font-size: 14px;
-        margin-right: 0;
-    }
-
-    #produc_grid_bill .sort_icon {
-        margin-top: 3px;
-    }
-
-    #produc_grid_bill .sort_select span {
-        font-size: 16px;
-    }
-
-    #produc_grid_bill .sort_select select {
-        font-size: 16px;
-        padding: 7px 8px;
-    }
-
-    #produc_grid_bill .count_page span.cnt_pg {
-        font-size: 16px;
-    }
-
-    #produc_grid_bill .count_page .pagination>li>a {
-        padding: 10px 13px;
-    }
-
-    #produc_grid_bill .product_grid_main .product_img_part {
-        margin: 30px 0;
-    }
-
-    #produc_grid_bill .product_img_part .star i {
-        color: #fcc10d;
-        font-size: 12px;
-    }
-
-    #produc_grid_bill .product_img_part .price {
-        font-size: 16px;
-    }
 
     .bleow_pages {
         margin-bottom: 40px;
     }
 
-    #counter_down .res_count {
-        margin-top: 10px;
-    }
 
     #blog_part {
         padding: 60px 0;
@@ -902,62 +884,6 @@
         padding: 0;
     }
 
-    #blog_grid_view .blog_content .main_blog {
-        margin-top: 30px;
-    }
-
-    #blog_grid_view .blog_content {
-        margin: 0;
-        padding: 0;
-    }
-
-    #blog_grid_view .sort_icon {
-        text-align: left
-    }
-
-    #blog_grid_view .sort_icon a i {
-        padding: 6px;
-        font-size: 16px;
-        margin-right: 0;
-    }
-
-    #blog_grid_view .sort_select span {
-        font-size: 16px;
-    }
-
-    #blog_grid_view .sort_select select {
-        font-size: 16px;
-        padding: 8px 13px;
-    }
-
-    #blog_grid_view .numbe_page p {
-        text-align: left;
-        margin-top: 37px;
-        font-size: 15px
-    }
-
-    #blog_grid_view .numbe_page,
-    #blog_grid_view .count_page {
-        margin-top: 30px;
-    }
-
-    #blog_grid_view .count_page nav span.cnt_pg {
-        margin-top: 5px;
-        font-size: 16px;
-    }
-
-    #blog_grid_view .count_page .pagination>li>a {
-        padding: 10px 13px;
-    }
-
-    #blog_grid_view .blog_content {
-        margin-top: 20px;
-    }
-
-    #blog_grid_view .blog_content .main_blog {
-        margin-bottom: 40px;
-        margin-top: 60px;
-    }
 
     #blog-detailes .detailes_img {
         padding-top: 40px;
@@ -1004,31 +930,7 @@
         padding: 100px 0;
     }
 
-    #wish_part .table_part thead th {
-        font-size: 14px;
-        padding: 0 14px;
-    }
 
-    #wish_part .table_part tbody tr td a.trash {
-        font-size: 22px;
-    }
-
-    #wish_part .table_part tbody tr td .wish_product {
-        margin-right: 30px;
-        margin-left: 30px;
-        margin-top: 25px;
-        margin-bottom: 8px;
-    }
-
-    #wish_part .table_part tbody tr td .wish_content h3 {
-        font-size: 18px;
-        padding-bottom: 5px;
-    }
-
-    #wish_part .table_part tbody tr td a.add_cart {
-        font-size: 12px;
-        padding: 8px 6px;
-    }
 
     #cart_part .cart_table table thead tr th {
         font-size: 16px;
@@ -1081,6 +983,10 @@
         margin-top: 60px;
     }
 
+    .check_form {
+        margin-bottom: 30px;
+    }
+
     #footer_part .about_krestfeest .p_2 {
         padding-top: 15px;
     }
@@ -1122,10 +1028,6 @@
         transition: all linear 0.2s;
     }
 
-    header nav .navbar-nav .nav-item .nav-link:hover {
-        color: #ab1629;
-    }
-
     .right_menu li a::after {
         position: absolute;
         content: "";
@@ -1145,18 +1047,13 @@
 
     #banner .banner_img {
         position: relative;
-        left: -24%;
-        top: 8% !important;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 35px !important;
     }
 
-    #banner .banner_img .man {
-        position: absolute;
-        top: -25px;
-        right: -110px;
-    }
 
     #banner .banner_text {
-        text-align: right;
         margin-top: 20px;
     }
 
@@ -1177,9 +1074,16 @@
     #banner .banner_text a {
         margin-top: 13px;
         margin-bottom: 0;
-        margin-right: 75px;
+        margin-right: 10px;
     }
 
+    #banner .banner_image img.banner_img {
+        width: 310px !important;
+        height: 310px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center center;
+    }
 
     header nav .navbar-nav .nav-item .dropdown.top_60 {
         left: 405px;
@@ -1310,45 +1214,40 @@
         padding-top: 0px;
     }
 
+    header nav .right_menu .nav_item .dropdown3 {
+        right: 0;
+        width: 215px;
+        padding-bottom: 10px;
+        top: -150px;
+    }
+
+    header nav .right_menu .nav_item .dropdown3 ul.drop-item1 li {
+        margin-bottom: 10px;
+    }
+
+    header nav .right_menu .nav_item .dropdown3 ul.drop-item1 img {
+        width: 50px !important;
+    }
+
+    header nav .right_menu .nav_item:hover .dropdown3 {
+        top: 0px;
+    }
+
+    header nav .navbar-nav .nav-item .dropdown,
+    header nav .right_menu .nav_item .dropdown {
+        left: 400px;
+    }
+
+    header nav .right_menu .nav_item:hover .dropdown {
+        top: 20px;
+    }
+
+    header nav .right_menu .nav_item .dropdown3 {
+        top: 30px;
+    }
 
     /*    BANNER PART ENDS*/
-    #gift_part .gift_right_part {
-        padding-top: 0px;
-    }
 
-    #gift_part .gift_left_part .gift_left_part_content a {
-        font-family: 'Ubuntu', sans-serif;
-        color: #ab1629;
-        font-size: 20px;
-        border: 1px solid #ab1629;
-        line-height: 40px;
-        padding: 0 15px;
-        border-radius: 5px;
-        display: inline-block;
-        transition: all linear 0.3s;
-        margin-top: 13px;
-    }
-
-    #gift_part .gift_right_part .gift_right_part_content a {
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 500;
-        text-transform: capitalize;
-        font-size: 20px;
-        color: #ab1629;
-        line-height: 40px;
-        display: inline-block;
-        padding: 0 15px;
-        background: #fff;
-        margin-top: 15px;
-        border-radius: 5px;
-        transition: all linear 0.3s;
-    }
-
-    #get_ticket .ticket_text .modal-body .pupop-btn {
-        font-size: 15px;
-        left: 16px;
-        transform: translateX(0);
-    }
 
     #prouct_part {
         padding: 60px 0;
@@ -1368,11 +1267,15 @@
         margin-top: 5px;
     }
 
+    .sort_icon {
+        display: block;
+    }
+
     #prouct_part .sort_icon a i {
-        font-size: 12px;
-        width: 22px;
-        height: 22px;
-        line-height: 22px;
+        font-size: 16px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
         margin-right: 0;
     }
 
@@ -1419,8 +1322,8 @@
         margin-top: 60px;
     }
 
-    #prouct_part .product_img {
-        margin-top: 50px;
+    #prouct_part .product_img_part {
+        margin: 0;
     }
 
     #produc_grid_bill .product_img_part .star i {
@@ -1456,21 +1359,7 @@
         margin-top: 40px;
     }
 
-    #get_ticket {
-        padding: 60px 0;
-    }
 
-    #get_ticket .ticket_text ul {
-        text-align: center;
-    }
-
-    #get_ticket .ticket_text ul li a {
-        margin-top: 35px;
-    }
-
-    #counter_down .res_count {
-        margin-top: 0px;
-    }
 
     #blog_part .blog_content .main_blog .blog_text .date {
         font-family: 'Ubuntu', sans-serif;
@@ -1480,7 +1369,7 @@
         padding-bottom: 20px;
     }
 
-    blog_part .blog_content .main_blog .blog_text h3 {
+    #blog_part .blog_content .main_blog .blog_text h3 {
         font-family: 'Ubuntu', sans-serif;
         font-size: 16px;
         color: #222;
@@ -1513,7 +1402,7 @@
     }
 
     #blog_part .blog_content .main_blog {
-        margin-top: 90px;
+        margin-top: 40px;
     }
 
     #blog_part .blog_content {
@@ -1521,49 +1410,7 @@
         padding: 0;
     }
 
-    #blog_grid_view .sort_icon a i {
-        font-size: 12px;
-        padding: 4px;
-        margin-right: 0;
-    }
 
-    #blog_grid_view .sort_icon {
-        margin-top: 5px;
-    }
-
-    #blog_grid_view .sort_select span {
-        font-size: 14px;
-    }
-
-    #blog_grid_view .sort_select select {
-        padding: 8px 4px;
-        font-size: 14px;
-    }
-
-    #blog_grid_view .count_page .pagination>li>a {
-        padding: 5px 10px;
-    }
-
-    #blog_grid_view .count_page span.cnt_pg {
-        font-size: 15px;
-    }
-
-    #footer_part .about_krestfeest .p_2 {
-        padding-top: 15px;
-    }
-
-    #blog_grid_view .numbe_page p {
-        margin-top: 5px;
-        font-size: 14px;
-    }
-
-    #blog_grid_view .blog_content .main_blog {
-        margin-bottom: 100px;
-    }
-
-    #blog_comment .blog_form {
-        margin-top: 30px;
-    }
 
     #blog-detailes .tag ul li a {
         padding: 8px 12px;
@@ -1575,14 +1422,7 @@
         margin-left: 55px;
     }
 
-    #wish_part .table_part thead th {
-        font-size: 15px;
-    }
 
-    #wish_part .table_part tbody tr td a.add_cart {
-        font-size: 14px;
-        padding: 10px 12px;
-    }
 
     #cart_part .cart_table table thead tr th {
         font-size: 16px;
@@ -1635,20 +1475,8 @@
         margin-top: 60px;
     }
 
-    #contac_part {
-        padding: 60px 0;
-    }
-
-    #contac_part .info_prt p {
-        font-size: 11px;
-    }
-
-    #contac_part .info_prt ul li a {
-        margin: 0 2px;
-    }
-
-    #contac_part .info_prt h3 {
-        padding-bottom: 32px;
+    .check_form {
+        margin-bottom: 30px;
     }
 
     .footer_bottom .f-l {
@@ -1713,6 +1541,10 @@
         line-height: 15px;
     }
 
+    .check_form {
+        margin-bottom: 30px;
+    }
+
     .pagination>li>a {
         padding: 10px 15px;
     }
@@ -1727,11 +1559,11 @@
     }
 
     #prouct_part .sort_select select {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     #prouct_part .sort_select select {
-        padding: 10px 8px;
+        padding: 7px 8px;
     }
 
     #banner .banner_text a {
@@ -1761,26 +1593,12 @@
         font-size: 12px;
     }
 
-    #produc_grid_bill .sort_icon a i {
-        margin-right: 2px;
-    }
-
-    #produc_grid_bill .product_img_part .star i {
-        color: #fcc10d;
-        font-size: 12px;
-    }
-
-    #produc_grid_bill .product_img_part .price {
-        font-size: 16px;
-    }
-
-    #produc_grid_bill .product_grid_main .product_img_part {
-        margin: 30px 0;
-    }
 
     #product_details .product-details .product_brief ul {
         margin-top: 0;
     }
+
+
 
     #blog_part .blog_content .main_blog .blog_text h3 {
         font-size: 15px;
@@ -1848,57 +1666,6 @@
         padding: 60px 0;
     }
 
-    #blog_grid_view .sort_icon a i {
-        font-size: 15px;
-        padding: 7px;
-    }
-
-    #blog_grid_view .sort_select select {
-        font-size: 16px;
-        padding: 8px 10px;
-    }
-
-    #blog_grid_view .sort_select span {
-        font-size: 16px;
-    }
-
-    #blog_grid_view .sort_icon {
-        margin-top: 5px;
-    }
-
-    #blog_grid_view .numbe_page p {
-        margin-top: 5px;
-    }
-
-    #blog_grid_view .blog_content .main_blog .blog_text h3 {
-        font-size: 15px;
-        padding-top: 10px;
-    }
-
-    #blog_grid_view .blog_content .main_blog .blog_text a {
-        font-size: 18px;
-    }
-
-    #blog_grid_view .blog_content .main_blog .blog_text .date {
-        font-size: 12px;
-    }
-
-    #blog_grid_view .blog_content .main_blog .blog_text .like_and_comment span {
-        font-size: 11px;
-    }
-
-    #blog_grid_view .blog_content .main_blog .blog_text .like_and_comment span i {
-        margin-right: 4px;
-    }
-
-    #blog_grid_view .blog_content .main_blog {
-        margin-top: 40px;
-        margin-bottom: 60px;
-    }
-
-    #blog_grid_view .blog_content {
-        margin-top: -10px;
-    }
 
     header nav .right_menu .nav_item .dropdown3 {
         width: 240px;

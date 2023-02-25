@@ -17,6 +17,7 @@ a:hover {
 ol,
 ul {
     list-style: none;
+    margin: 0;
 }
 
 .clr {
@@ -1605,14 +1606,10 @@ ul.pagination .page-item .page-link:hover {
 
 .main_video .video_img {
     overflow: hidden;
-    border-top-right-radius: 35px;
-    border-top-left-radius: 35px;
     position: relative;
 }
 
 .main_video .video_img img {
-    border-top-right-radius: 35px;
-    border-top-left-radius: 35px;
     transition: all linear 0.3s;
 }
 
@@ -1622,7 +1619,6 @@ ul.pagination .page-item .page-link:hover {
 }
 
 .main_video {
-    border-radius: 35px;
     transition: all linear 0.3s;
     border: 1px solid rgb(221, 221, 221, 0.3);
 }
@@ -1635,7 +1631,7 @@ ul.pagination .page-item .page-link:hover {
 }
 
 .main_video .video_text {
-    padding: 20px;
+    padding: 10px 5px;
     transition: all linear 0.3s;
 }
 
@@ -1651,9 +1647,9 @@ ul.pagination .page-item .page-link:hover {
 
 .main_video .video_text h3 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     color: #222;
-    font-weight: 500;
+    font-weight: 600;
     padding-top: 10px;
     transition: all linear 0.3s;
 }
@@ -1671,12 +1667,12 @@ ul.pagination .page-item .page-link:hover {
 
 .main_video .video_text a {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     color: #444;
     text-transform: capitalize;
     margin-bottom: 5px;
     transition: all linear 0.3s;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .main_video .video_text a i {
@@ -1686,39 +1682,51 @@ ul.pagination .page-item .page-link:hover {
     position: relative;
     top: 2px;
     transition: all linear 0.3s;
-    transform: translateX(0px);
 }
 
-.main_video:hover {
-    transform: translate(-5px, -5px);
-}
+
 
 .main_video:hover .video_text a i {
     transform: translateX(5px);
     transition: all linear 0.3s;
 }
-
-.video_icon {
+.video_overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80px;
-    height: 55px;
-    background-color: #fff;
-    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.4);
     overflow: hidden;
     transition: all linear 0.3s;
+    transform: scale(0);
 }
 
-.video_icon a i {
-    color: red;
+.video_overlay a  {
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    font-size: 25px;
+    font-size: 14px;
+    color: #fff;
     transition: all linear 0.3s;
+}
+.video_overlay a i{
+    position: relative;
+    left: 30px;
+    color: red;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.video_overlay:hover a i{
+    color: var(--blue);
+    color: red;
+}
+.main_video:hover .video_overlay{
+    transform: scale(1);
+}
+.video_overlay a span{
+    display: block;
 }
 
 .main_video:hover .video_icon {
@@ -1728,6 +1736,147 @@ ul.pagination .page-item .page-link:hover {
 
 .main_video:hover .video_icon a i {
     font-size: 23px;
+}
+.video_text ul li{
+    display: inline-block;
+    margin: 10px 10px;
+    color: #aaa;
+    font-size: 11px;
+}
+.video_text ul li i{
+    margin-right: 3px;
+}
+/* Video Details Start */
+
+#video_details {
+    padding: 100px 0 50px 0;
+    margin: 50px 0 0 0;
+    background-color: #f7f7f7;
+}
+
+.video_thumbnail {
+    overflow: hidden;
+    position: relative;
+
+}
+.video_thumbnail .video_icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all linear 0.3s;
+}
+.video_thumbnail .video_icon:hover{
+    background-color: #083D77;
+}
+.video_thumbnail .video_icon:hover i{
+    color: #fff;
+}
+.video_thumbnail .video_icon i{
+    font-size: 20px;
+    color: var(--blue);
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.video_thumbnail img {
+    transition: all linear 0.3s;
+}
+.video_title{
+    background-color: #fff;
+    padding: 50px 30px 10px 30px;
+}
+.video_title h2{
+    font-family:'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #151515;
+}
+.video_title ul li{
+    display: inline-block;
+    margin: 20px 40px 20px 0px;
+    color: #888888;
+
+}
+.video_title > ul li i{
+    margin-right: 8px;
+}
+.video_title .video_share span{
+    margin-right: 20px;
+    font-size: 20px;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: 500;
+
+}
+
+.video_title .video_share ul.video_share_icon{
+    display: inline-block;
+}
+.video_title .video_share ul.video_share_icon li{
+    display: inline-block;
+    margin: 10px 5px 20px 0px;
+    color: #888888;
+}
+.video_title .video_share ul.video_share_icon li i{
+    color: #777;
+    font-size: 18px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 2.5px;
+    transition: all linear 0.3s;
+}
+.video_title .video_share ul.video_share_icon li i:hover{
+    background-color: var(--blue);
+    color: #fff;
+    border: var(--blue);
+}
+
+.video-description{
+    background-color: #fff;
+    padding: 50px 30px 30px 30px;
+    margin: 20px 0;
+}
+.video-description h2{
+    font-size: 20px;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: 600;
+    color: #151515;
+    padding-bottom: 15px ;
+    border-bottom: 1px solid #c9c9c9;
+}
+.video-description p{
+    font-size: 16x;
+    text-align: justify;
+    line-height: 2;
+    padding: 20px 0;
+}
+.video_related{
+    background-color: #f7f7f7;
+    padding: 0 0 70px 0;
+}
+.video_related_main{
+    background-color: #fff;
+    padding: 30px 0px;
+    margin-bottom: 50px;
+}
+.video_related_main h2{
+    font-size: 22px;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: 600;
+    color: #151515;
+    padding-bottom: 15px ;
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 30px;
 }
 
 /* product grid veiw part start*/

@@ -3,6 +3,11 @@
 
 
 $(document).ready(function () {
+  $('.venobox').venobox({
+    spinner: 'wave',
+    autoplay: false,
+    overlayColor: 'red'
+  });
 
   $(window).scroll(function () {
     var scroll = $(this).scrollTop();
@@ -18,37 +23,27 @@ $(document).ready(function () {
       $('.top_to').fadeOut();
     }
   });
-
   $('.displayed').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    dots: false,
+    dots:false,
     fade: true,
     asNavFor: '.for_dis_slide'
-  });
-  $('.for_dis_slide').slick({
+});
+$('.for_dis_slide').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: '.displayed',
-    centerPadding: 0,
+    centerPadding:0,
     dots: false,
-    arrows: true,
-    prevArrow: '<i class="fa fa-angle-left dis_left"></i>',
-    nextArrow: ' <i class="fa fa-angle-right dis_right"></i>',
+  arrows:true,
+  prevArrow:'<i class="fa fa-angle-left dis_left"></i>',
+  nextArrow:' <i class="fa fa-angle-right dis_right"></i>',
     centerMode: true,
     focusOnSelect: true
-  });
+});
 
-  $("#snow").fallingSnow({
-    stopOnClick: true,
-    stopElement: $('#snow'),
-    speedAdjust: 3,
-    thicknessAdjust: 1.5,
-    drift: 100,
-    opacity: true,
-
-  });
   $(".cart-plus-minus").append('<div class="dec qtybutton">-</div><div class="inc qtybutton">+</div>');
   $(".qtybutton").on("click", function () {
     var $button = $(this);
@@ -75,56 +70,6 @@ $(document).ready(function () {
       scrollTop: 0,
     }, 500);
   });
-
-
-
-  $('.all_customers').slick({
-
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    dots: false,
-    arrows: false,
-    speed: 800,
-    autoplay: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoPlay: true,
-          dots: false,
-          arrows: false,
-          arrows: false,
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoPlay: true,
-          dots: false,
-          arrows: false,
-
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoPlay: true,
-          dots: false,
-          arrows: false,
-        }
-      }
-
-    ]
-  });
-
-
-
 
 
   var typed = new Typed('.type', {

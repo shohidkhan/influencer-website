@@ -256,8 +256,9 @@ header nav .right_menu .nav_item .dropdown {
   transition: all linear 0.4s;
   opacity: 0;
   visibility: hidden;
-  box-shadow: 0px 0px 20px 0px rgb(44, 26, 207, 1);
   z-index: 2000;
+  border-radius: 13px;
+  box-shadow: 0 0.01rem 0.5rem #d1d1d1;
 }
 
 header nav .right_menu .nav_item .dropdown2 {
@@ -357,17 +358,18 @@ header nav .right_menu .nav_item .dropdown2 h3 span {
 header nav .right_menu .nav_item .dropdown3 {
   position: absolute;
   width: 255px;
-  left: -152px;
+  left: -70px;
   top: 65px;
   background: #fff;
   transition: all linear 0.3s;
   border-top: 2px solid var(--blue);
   padding-bottom: 20px;
-  box-shadow: 0px 0px 20px 0px rgb(8, 61, 119, 1);
   opacity: 0;
   visibility: hidden;
   transition: all linear 0.4s;
   z-index: 99999;
+  border-radius: 13px;
+  box-shadow: 0 0.01rem 0.5rem #d1d1d1;
 }
 
 .shop-padding .nav-link span {
@@ -572,9 +574,11 @@ header nav .right_menu li a.nav-link i {
 /********menu part ends********/
 #banner {
   background: #222222;
-  padding: 100px 0;
   position: relative;
   overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 #banner .banner_image {
@@ -920,6 +924,9 @@ header nav .right_menu li a.nav-link i {
   border: 1px solid #d7d7d7;
   padding: 30px 15px;
   margin-top: -17px;
+  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
 }
 
 .review-wrap {
@@ -1098,6 +1105,7 @@ header nav .right_menu li a.nav-link i {
   border: none;
   color: #fff;
   text-transform: capitalize;
+  border-radius: 35px;
 }
 
 .cartcupon-wrap ul li a:hover,
@@ -1123,27 +1131,8 @@ header nav .right_menu li a.nav-link i {
   height: 45px;
   border: 1px solid #d7d7d7;
   padding-left: 20px;
+  border-radius: 35px;
 }
-
-/* .cart-wrap .remove {
-    width: 2%;
-}
-
-.cart-wrap .total {
-    width: 5%;
-}
-
-.cart-wrap .quantity {
-    width: 5%;
-}
-
-.cart-wrap .price {
-    width: 5%;
-}
-
-.cart-wrap .image {
-    width: 5%;
-} */
 
 .cupon-wrap button {
   width: 150px;
@@ -1155,6 +1144,8 @@ header nav .right_menu li a.nav-link i {
   color: #fff;
   text-transform: uppercase;
   border: none;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
 }
 
 .cupon-wrap button:hover {
@@ -1568,14 +1559,21 @@ ul.pagination .page-item .page-link:hover {
   padding-top: 60px;
   margin-top: 30px;
 }
-
+.main_video {
+  border-radius: 35px;
+  border: 1px solid #b7b7b7;
+}
 .main_video .video_img {
   overflow: hidden;
   position: relative;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
 }
 
 .main_video .video_img img {
   transition: all linear 0.3s;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
 }
 
 .main_video:hover .video_img img {
@@ -1636,6 +1634,10 @@ ul.pagination .page-item .page-link:hover {
   margin-bottom: 5px;
   transition: all linear 0.3s;
   font-weight: 600;
+}
+.main_video .video_text a.watch_video {
+  margin-left: 10px;
+  display: inline-block;
 }
 
 .main_video .video_text a i {
@@ -1718,6 +1720,8 @@ ul.pagination .page-item .page-link:hover {
 .video_thumbnail {
   overflow: hidden;
   position: relative;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
 }
 .video_thumbnail .video_icon {
   position: absolute;
@@ -1751,6 +1755,8 @@ ul.pagination .page-item .page-link:hover {
 .video_title {
   background-color: #fff;
   padding: 50px 30px 10px 30px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
 }
 .video_title h2 {
   font-family: "Ubuntu", sans-serif;
@@ -1803,6 +1809,7 @@ ul.pagination .page-item .page-link:hover {
   background-color: #fff;
   padding: 50px 30px 30px 30px;
   margin: 20px 0;
+  border-radius: 35px;
 }
 .video-description h2 {
   font-size: 20px;
@@ -1826,6 +1833,7 @@ ul.pagination .page-item .page-link:hover {
   background-color: #fff;
   padding: 30px 0px;
   margin-bottom: 50px;
+  border-radius: 35px;
 }
 .video_related_main h2 {
   font-size: 22px;
@@ -2379,7 +2387,15 @@ ul.pagination .page-item .page-link:hover {
   padding: 10px 20px;
   margin-right: -1px;
 }
-
+#product_details .product-details .tab_part .nav .nav-item .nav-link.left_br {
+  border-top-left-radius: 35px;
+}
+#product_details .product-details .tab_part .nav .nav-item .nav-link.mid_br {
+  border-top-right-radius: 35px;
+}
+/* #pills-tab {
+  margin-left: 20px;
+} */
 #product_details .product-details .tab_part .nav .nav-item .nav-link:hover {
   background-color: var(--blue);
   color: #fff;
@@ -2762,7 +2778,7 @@ ul.pagination .page-item .page-link:hover {
 
 #cart_part {
   padding: 100px 0;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 #cart_part .cart_table table thead tr th {
@@ -2974,12 +2990,14 @@ ul.pagination .page-item .page-link:hover {
 .check_form {
   border: 1px solid #ddd;
   padding: 20px;
+  border-radius: 35px;
 }
 
 .order {
   border: 1px solid #ddd;
   padding: 20px;
   margin: 0;
+  border-radius: 35px;
 }
 
 #check_part .check_form h3 {
@@ -3052,6 +3070,8 @@ ul.pagination .page-item .page-link:hover {
 
 #check_part .order_detailes ul {
   border: 1px solid #ddd;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
 }
 
 #check_part .order_detailes ul li {
@@ -3078,6 +3098,8 @@ ul.pagination .page-item .page-link:hover {
 #check_part .paymant {
   border: 1px solid #ddd;
   padding: 30px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
 }
 
 #check_part .paymant p {
@@ -3101,10 +3123,10 @@ ul.pagination .page-item .page-link:hover {
 
 #check_part .order_btn button {
   font-family: "Ubuntu", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   color: #fff;
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 30px;
   background: var(--blue);
   border-radius: 50px;
   margin-top: 30px;
